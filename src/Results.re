@@ -17,7 +17,11 @@ let make = (~ctx: ctx, _children) => {
         ctx.isLoading ?
           ReasonReact.string("Loading...") :
           ctx.results
-          /* Map each list item to a <Card /> component */
+          /* Map each list item to a <Card /> component
+               We are using the List.mapi method, which provides
+               us with an index argument that we need to uniquely
+               define our ids.
+             */
           |> List.mapi(
                (index: int, {name, href, description}: Root.repository) =>
                <Card key={string_of_int(index)} name href description />
