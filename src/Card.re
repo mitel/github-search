@@ -1,15 +1,5 @@
 let component = ReasonReact.statelessComponent("Card");
 
-module Styles = {
-  let card =
-    ReactDOMRe.Style.make(
-      ~border="2px solid #898989",
-      ~borderRadius="4px",
-      ~padding="1rem",
-      (),
-    );
-};
-
 let make = (~name, ~href, ~description, _children) => {
   ...component,
   render: _self =>
