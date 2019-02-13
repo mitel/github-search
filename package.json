@@ -1,0 +1,28 @@
+{
+  "name": "gitsearch",
+  "version": "0.0.1",
+  "description": "Testing reasonml",
+  "author": "mitelone@finqware.com",
+  "scripts": {
+    "build": "parcel build ./src/index.html",
+    "dev": "parcel ./src/index.html ./src/*.re",
+    "clean": "rm -rf dist/; rm -rf .cache; rm src/*.bs.js",
+    "cleanb": "rm -rf dist/; rm -rf .cache; rm src/*.bs.js; npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^4.0.18",
+    "bsb-js": "^1.1.7",
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.0"
+  },
+  "dependencies": {
+    "@glennsl/bs-json": "^3.0.0",
+    "bs-css": "^8.0.1",
+    "bs-fetch": "^0.3.1",
+    "bulma": "^0.7.4",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reason-react": "^0.5.3"
+  }
+}
