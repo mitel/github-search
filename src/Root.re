@@ -17,7 +17,8 @@ type action =
   | UpdateResults(list_of_repos)
   | Search;
 
-/* global app state */
+/* global app state
+   TODO: replace the isLoading boolean with variants*/
 let initialAppState = {input: "", isLoading: false, results: []};
 
 module Api = {
