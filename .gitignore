@@ -13,7 +13,7 @@ firebase-debug.log*
 # dev/prod
 dist/
 lib/
-src/*.bs.js
+src/**/*.bs.js
 
 # Dependency directories
 node_modules/

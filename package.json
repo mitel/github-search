@@ -4,10 +4,10 @@
   "description": "Testing reasonml",
   "author": "mitelone@finqware.com",
   "scripts": {
-    "build": "parcel build ./src/index.html",
+    "build": "parcel build src/index.html",
     "dev": "parcel ./src/index.html ./src/*.re",
-    "clean": "rm -rf dist/; rm -rf .cache; rm src/*.bs.js",
-    "cleanb": "rm -rf dist/; rm -rf .cache; rm src/*.bs.js; npm run build"
+    "clean": "rm -rf dist/; rm -rf .cache; rm -rf lib; rm src/*.bs.js; rm src/**/*.bs.js",
+    "cleanb": "rm -rf dist/; rm -rf .cache; rm -rf lib; rm src/*.bs.js; rm src/**/*.bs.js; npm run build"
   },
   "license": "MIT",
   "devDependencies": {
